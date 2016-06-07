@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+       /* $("#box p:first").next().css("border","2px solid red");*/
+       /*  $("#box p:last").prev().css("border","2px solid red");*/
+         /*$("#box").parents().css("border","2px solid red");*/ $("#box").parents().addClass('color').css("border","2px solid red");
+    });
+    </script>
+    <style>
+        .color{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis iste molestias dolore soluta, consequuntur suscipit expedita voluptatum temporibus id quibusdam alias. Amet optio aspernatur praesentium quasi expedita, quo soluta!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis iste molestias dolore soluta, consequuntur suscipit expedita voluptatum temporibus id quibusdam alias. Amet optio aspernatur praesentium quasi expedita, quo soluta!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis iste molestias dolore soluta, consequuntur suscipit expedita voluptatum temporibus id quibusdam alias. Amet optio aspernatur praesentium quasi expedita, quo soluta!</p>
+</div>
+        
+</body>
+</html>

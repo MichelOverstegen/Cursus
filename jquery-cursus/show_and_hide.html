@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+        $("#show").on("click", function(){
+            $("#box").show();
+        });
+        
+        $("#hide").on("click", function(){
+            $("#box").hide();
+        });
+    });
+    </script>
+    <style>
+        #box{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+ 
+<a id="show" href="#">Click here to show</a><br><br>
+<a id="hide" href="#">Click here to hide</a>
+  
+<div id="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quae voluptatum consequuntur voluptatibus excepturi sunt dolorum quo velit quos eveniet officia illo inventore, in consequatur explicabo quibusdam, placeat sequi odit.</p>
+</div>    
+        
+</body>
+</html>

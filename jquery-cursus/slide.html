@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+        $("#slide-up").click(function(){
+           $("#para").slideUp(2000, "linear"); 
+        });
+    $("#slide-down").click(function(){
+        $("#para").slideDown(2000); 
+        });
+    $("#toggleSlide").click(function(){
+        $("#para").slideUp("fast"); 
+        });
+    });
+    </script>
+</head>
+<body>
+  
+ <a id="slide-up" href="#">Click here to slide up!</a>
+ <a id="slide-down" href="#">Click here to slide down!</a>
+ <a id="toggleSlide" href="#">Click here to toggle!</a>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur commodi sunt pariatur aut a delectus laudantium minima. Cum ut quibusdam velit beatae suscipit distinctio, deserunt possimus maiores fuga tempora in!loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur commodi sunt pariatur aut a delectus laudantium minima. Cum ut quibusdam velit beatae suscipit distinctio, deserunt possimus maiores fuga tempora in!lorem</p>    
+        
+</body>
+</html>

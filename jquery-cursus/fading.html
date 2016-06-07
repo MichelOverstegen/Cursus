@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+        $("#fade-in").on("click", function(){
+            $("#box").fadeIn(4000, function(){
+                alert("I'm done");
+            });
+        });
+        
+        $("#fade-out").on("click", function(){
+            $("#box").fadeOut("fast", function(){
+                alert("Faded out");    
+            });
+        });
+    });
+    </script>
+    <style>
+        #box{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+ 
+<a id="fade-in" href="#">Click here to fade-in</a><br><br>
+<a id="fade-out" href="#">Click here to fade-out</a>
+  
+<div id="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quae voluptatum consequuntur voluptatibus excepturi sunt dolorum quo velit quos eveniet officia illo inventore, in consequatur explicabo quibusdam, placeat sequi odit.</p>
+</div>    
+        
+</body>
+</html>

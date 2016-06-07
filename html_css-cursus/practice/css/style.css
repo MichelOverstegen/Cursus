@@ -1,0 +1,52 @@
+#page-title{
+    text-align: center;
+}
+
+#picture-container{
+    border: 2px solid red;
+    padding: 20px;
+    background: #000;
+    width: 400px;
+    /*height: 400px;*/
+    margin: 0 auto;
+}
+
+/*hier zoekt ie naar een image met een id "image"*/
+img#image{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+/* 
+een image via css invoegen door de img de achtergrond van een div te maken
+    1 punt . per map die je terug moet om bij de pagina te komen 
+*/
+#picture-css{
+    background-image: url(../images/image4.jpg);
+    width: 900px;
+    height: 300px;
+}
+
+#hovers{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url(../images/image4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+#hovers h2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* al je met je muis over de div heengaat dan word de hoover css toegepast */
+#hovers:hover{
+   background-color: #000; 
+    border: 5px solid red;
+    color: white;
+    opacity: 1;
+}

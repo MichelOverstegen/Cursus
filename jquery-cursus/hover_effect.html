@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+        $(".paras").hover(highLightPara);
+        
+        function highLightPara(){
+            $(this).toggleClass("highLight");
+        }
+    });
+    </script>
+    <style>
+        .highLight{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  
+<div id="box">
+    <p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, expedita mollitia est culpa enim iusto aut labore accusantium voluptas ea, facere iste tempora quisquam sit voluptates eligendi quasi minus. Corrupti.</p>
+    <p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, saepe asperiores, dolore necessitatibus pariatur ducimus earum assumenda voluptatibus adipisci nam corrupti sint aliquam sapiente maxime quia dicta sunt ullam est.</p>
+    <p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dolorum quos impedit aliquam ipsum ea laudantium molestiae dolor, laborum debitis facilis nesciunt. Nam, enim velit nisi. Fuga exercitationem hic neque.</p>
+    <p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugit debitis molestias, nulla pariatur ea repellat expedita ut, minima tenetur porro alias repudiandae maiores optio similique, ex. Hic voluptas, quos.</p>
+</div>   
+        
+</body>
+</html>

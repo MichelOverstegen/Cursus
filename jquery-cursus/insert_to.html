@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+      $("#appendTo").click(function(){
+        $("#box p:first").appendTo("#box p:last");  
+      });  
+    $("#prependTo").click(function(){
+        $("p").after("**");  
+      });  
+    });
+    </script>
+</head>
+<body>
+ 
+ <a href="#" id="appendTo">Append</a>
+  <a href="#" id="prependTo">Prepend</a>
+  
+    <div id="box">
+        <p>this is the 1</p>
+        <p>this is the 2</p>
+        <p>this is the 3</p>
+        <p>this is the 4</p>
+        <p>this is the 5</p>
+    </div>
+        
+</body>
+</html>

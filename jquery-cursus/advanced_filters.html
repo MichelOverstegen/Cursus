@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+/*        $("p:first-child").css("border", "1px solid red");*/
+   /*     $("p:last-of-type").css("border", "1px solid blue");*/
+       /* $("div:has(p[class=third])").css("border", "4px solid yellow");*/
+       /* $("p:contains('Michel')").css("border", "4px solid yellow");*/
+        /*$("p:nth-child(3)").css("border", "4px solid yellow");*/
+        $("p:parent").css("border", "4px solid yellow");
+    });
+    </script>
+    
+    <style>
+
+    </style>
+</head>
+<body>
+  
+<div id="container">
+ <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium tempora perferendis odit expedita ab atque dicta possimus, accusamus quis, voluptates voluptate! Labore, sed amet non eius odio nulla molestiae.</p>  
+    
+ <p >Michel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium tempora perferendis odit expedita ab atque dicta possimus, accusamus quis, voluptates voluptate! Labore, sed amet non eius odio nulla molestiae.</p>
+ 
+ <p class="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium tempora perferendis odit expedita ab atque dicta possimus, accusamus quis, voluptates voluptate! Labore, sed amet non eius odio nulla molestiae.</p>  
+    
+ <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium tempora perferendis odit expedita ab atque dicta possimus, accusamus quis, voluptates voluptate! Labore, sed amet non eius odio nulla molestiae.</p>
+</div> 
+
+</body>
+</html>

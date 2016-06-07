@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script>
+    $("document").ready(function(){
+      $("#container p").wrap("<div id='box'>");  
+       /* $("#container p").wrapAll("<div id='box'>");*/ 
+       /* $("#container").empty(); */
+        /*$("#container p:first").remove();*/ 
+   /*     $("<div>container</div> ").replaceAll("#container"); */
+        /*$("#container ").replaceWith("<div>this has been replaced</div>");*/
+    });
+    </script>
+    
+    <style>
+    #box{
+        color:red;
+    } 
+    </style>
+    
+</head>
+<body>
+  <div id="container">
+  <p>Michel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi animi sit, sapiente totam ullam adipisci nulla eum vero omnis. Magnam vitae omnis, aliquam officia alias facilis est possimus quisquam.</p>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi animi sit, sapiente totam ullam adipisci nulla eum vero omnis. Magnam vitae omnis, aliquam officia alias facilis est possimus quisquam.</p>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi animi sit, sapiente totam ullam adipisci nulla eum vero omnis. Magnam vitae omnis, aliquam officia alias facilis est possimus quisquam.</p>
+  </div>  
+        
+</body>
+</html>

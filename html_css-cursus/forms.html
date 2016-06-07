@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+ <!-- 2 methodes om form aan te pakken.. en action is waar de invoer naartoe gestuurd word.. methode is soort data-->
+ 
+<form action="process.php" methode="post">
+
+   <label for="name">Name:
+    <input name="name" type="text" placeholder="Enter Name">
+     </label>
+  <p>Email:
+   <!-- controleerd of het een email is -->
+    <input name="email" type="email" placeholder="Enter Email">
+  </p>
+  <p>Password:
+    <input name="password" type=password placeholder="Enter password">
+  </p>
+  <p>
+    <input name="image" type="file"><br>
+  </p>
+  <p>
+    <input name="button" type="submit">
+  </p>
+    
+</form>
+   
+</body>
+</html>
